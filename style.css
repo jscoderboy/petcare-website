@@ -542,6 +542,11 @@ img {
   .section-d p {
     font-size: 1rem;
   }
+  #contact .d-flex{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 520px) {
