@@ -413,6 +413,18 @@ img {
   color: #fff;
   padding: 40px 0;
 }
+.contact .d-flex{
+  display: flex;
+}
+.contact .address{
+  padding:40px;
+}
+.contact h3{
+  font-size:1.7rem;
+}
+.contact .d-flex p{
+  font-size:1.2rem; 
+}
 /* Callback form */
 .callback-form {
   margin: 0 auto;
