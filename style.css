@@ -490,7 +490,8 @@ img {
   }
   .about .image{
     /* display: none; */
-    height:none;
+    height:0;
+    background-color: #fff !important;
   }
   .about .image img {
   margin:0 !important;
@@ -568,6 +569,8 @@ img {
     font-size:1rem;
     font-weight: 300;
   }
+  /* about us */
+  
   .contact .address{
     padding:20px 40px;
   }
