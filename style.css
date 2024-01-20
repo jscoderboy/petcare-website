@@ -223,56 +223,7 @@ img {
   margin: 40px 0;
 }
 /* Section B */
-.section-b {
-  padding: 40px 0;
-}
-.section-b .lead {
-  font-size: 1.3rem;
-  color: #333;
-}
-.section-b .sub-content {
-  width: 100%;
-  max-width: 750px;
-  margin: 0 auto;
-  text-align: center;
-}
-.section-b .food-quality {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 40px 0;
-}
-.section-b .food-quality .food-bowl img {
-  max-width: 800px;
-  min-width: 100%;
-}
-.section-b .food-quality h3 {
-  font-size: 1.8rem;
-}
-.food-quality .icon-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  width: 80%;
-}
-.food-quality .icon-wrapper img,
-.food-quality .cat_food-wrapper img {
-  width: 60px;
-  height: 60px;
-}
-.food-quality .cat-food {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.food-quality .cat_food-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 90%;
-}
+
 /* Section C */
 .section-c {
   padding: 40px 0;
@@ -456,29 +407,7 @@ img {
   .hero-content {
     margin: 30px 0;
   }
-  .section-b .lead {
-    font-size: 1.1rem;
-  }
-  .section-b .food-quality {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-  }
-  .food-bowl {
-    display: none;
-  }
-  .section-b .dog-food {
-    display: flex;
-    gap: 20px;
-  }
-  .section-b .cat-food {
-    flex-direction: row;
-    align-items: center;
-  }
-  .section-b .food-quality h3 {
-    font-size: 1.2rem;
-  }
+  
   .section-c .right-food-wrapper {
     flex-direction: column-reverse;
   }
@@ -544,19 +473,7 @@ img {
   .footer-content {
     flex-direction: column;
   }
-  .section-b{
-    padding-bottom:20px;
-  }
-  .section-b .dog-food,
-  .section-b .cat-food {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .section-b .food-quality .icon-wrapper {
-    width: 100%;
-    padding: 0 0 20px 25px;
-  }
+  
   .section-c{
     padding-top:0;
   }
