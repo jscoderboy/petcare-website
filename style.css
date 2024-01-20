@@ -489,7 +489,16 @@ img {
     text-align: center;
   }
   .about .image{
-    display: none;
+    /* display: none; */
+    height:none;
+  }
+  .about .image img {
+  margin:0 !important;
+  }
+  .about .image{
+    height:100%;
+    margin:40px 0;
+    background-color: none;
   }
   .about .details{
     padding:0 40px !important;
@@ -506,6 +515,16 @@ img {
   }
   .our-promise .details .sub-heading{
     padding-bottom: 20px;
+  }
+  /* Contact us */
+  .contact-wrapper .row{
+    flex-direction: column;
+  }
+  .contact-wrapper .row .info, .contact-wrapper .row .support-img{
+    width: 100%;
+  }
+  .contact-wrapper .row .info{
+    margin-bottom:40px;
   }
 }
 

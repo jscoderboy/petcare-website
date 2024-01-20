@@ -1,0 +1,117 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Adjust the height as needed */
+    background-image: url('./img/banner.jpg'); /* Replace with your actual image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
+}
+
+.text-container {
+    text-align: center;
+    z-index: 9;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #639; /* Adjust the button color */
+    color: #fff;
+    border-radius: 5px;    
+}
+.primary-color{
+    color:#639;
+}
+.contact-us .sub-heading{
+    padding:40px 0;
+}
+.contact-wrapper{
+    padding-bottom: 40px;
+}
+.contact-wrapper .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap:40px;
+  width: 100%;
+  margin:40px 0;
+}
+.contact-wrapper .info{
+    width:50%;
+    padding:40px;
+    border:2px solid #f6f6f6;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.contact-wrapper .sub-heading{
+    font-size:2rem;
+}
+.contact-wrapper .support-img img{
+    width:500px;
+}
+.contact-wrapper .support-img{
+
+ width: 50%;
+}
+form{
+    background-color: #f4f4f4;
+}
+.contact-wrapper .callback-form{
+    width: 100%;
+    padding:40px;
+    color:#090909;
+}
+.contact-wrapper .reach-out{
+    margin:30px 0;
+}
+.contact-wrapper .reach-out div{
+    flex-grow: 1;
+    padding:5px 0;
+    border-bottom: 2px dotted #639;
+}
+.contact-wrapper .reach-out img{
+    width:30px;
+    height:30px;
+}
+.contact-wrapper .reach-out{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.contact-wrapper label{
+    font-size:1.2rem;
+    font-weight: 500;
+    margin-right:10px;
+    color:#333;
+    display: block;
+    width:100%;
+}
+.contact-wrapper label span{
+    color:#090909;
+}
