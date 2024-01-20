@@ -485,12 +485,15 @@ img {
   .about{
     flex-direction: column;
   }
+  .about .primary-heading{
+    text-align: center;
+  }
   .about .image{
     display: none;
   }
   .about .details{
-    padding:20px;
-    margin:0;
+    padding:0 40px !important;
+    margin-right:0px !important;
   }
   .mission .sub-heading{
     padding:20px 0;
@@ -512,7 +515,7 @@ img {
   }
   .right-food-wrapper .sub-heading,
   .sub-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .footer-content {
     flex-direction: column;
@@ -535,6 +538,16 @@ img {
   }
   .section-c .food-content{
     padding-top:0px;
+  }
+  .section-c .food-content .lead{
+    font-size:1.1rem;
+  }
+  .right-food-wrapper .sub-heading {
+    padding-bottom:20px;
+  }
+  .footer-content .footer-nav ul li a{
+    font-size:1rem;
+    font-weight: 300;
   }
   .contact .address{
     padding:20px 40px;
