@@ -27,6 +27,7 @@ p {
 img {
   max-width: 100%;
 }
+
 .container {
   max-width: 1200px;
   width: 90%;
@@ -223,6 +224,51 @@ img {
   margin: 40px 0;
 }
 /* Section B */
+.section-b{
+  padding:40px 0;
+  margin:40px 0;
+  background-color: #f4f4f4;
+}
+.section-b .sub-heading{
+  padding:48px 0;
+}
+.section-b p{
+  margin-bottom:0;
+  font-size:1.3rem;
+  font-weight: 500;
+}
+.section-b .categories{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:50px;
+  width: 100%;
+  height: 100%;
+  margin-bottom:20px;
+}
+.section-b .categories .cate-card{
+  width:100%;
+  height: 100%;
+}
+.cate-card .d-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-b .categories .dog{
+  display: flex;
+  justify-content: flex-end;
+}
+.section-b .categories .cat{
+  display: flex;
+  justify-content: flex-start;
+}
+.section-b .categories .cate-card img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border:5px solid #7b1fda;
+}
 
 /* Section C */
 .section-c {
@@ -472,6 +518,10 @@ img {
   }
   .footer-content {
     flex-direction: column;
+  }
+  .section-b .categories .cate-card img {
+  width: 115px;
+  height: 115px;
   }
   
   .section-c{
