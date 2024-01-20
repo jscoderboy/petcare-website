@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <title>PetCare</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="navbar" id="navbar">
+          <div class="navbar-container">
+            <div class="navbar-brand">
+              <a href="index.html">
+                <img src="./img/logo.png" alt="Logo" />
+              </a>
+            </div>
+            <ul class="navbar-nav-left">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#blog">Blogs</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <ul class="navbar-nav-right">
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-location-dot"></i
+                  ><span>Find a store</span></a
+                >
+              </li>
+            </ul>
+            <!-- Hamburger Menu -->
+            <button type="button" class="hamburger" id="menu-btn">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden" id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#blog">Blogs</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div
+        class="banner"
+        style="background-image: url('./img/blog7-banner.jpg')"
+      >
+        <div class="overlay"></div>
+        <div class="text-container">
+          <h1 class="text-uppercase">Adopt don't shop</h1>
+        </div>
+      </div>
+      <article>
+        <h2 class="sub-heading text-uppercase">
+          Adopt, Don't Shop: Unleashing Compassion in Feline Adoption
+        </h2>
+        <div class="dog-image">
+          <img src="./img/blog7-post.jpg" alt="blog 7 post" />
+        </div>
+        <p class="lead">
+          In a world filled with choices, opting to adopt a cat rather than shop
+          for one is a powerful decision that echoes with compassion and makes a
+          significant impact on the lives of our feline friends. In this blog
+          post, we'll explore the reasons behind the "Adopt, Don't Shop"
+          movement and celebrate the joy of bringing a rescued cat into your
+          home.
+        </p>
+      </article>
+      <article>
+        <h3>Saving Lives:</h3>
+        <p>
+          When you choose to adopt a cat from a shelter or rescue organization,
+          you are giving a second chance at life to a furry friend in need.
+          Adopting not only transforms the life of the cat you bring home but
+          also creates space in shelters for other animals desperate for a
+          loving home.
+        </p>
+      </article>
+      <article>
+        <h3>Reducing Stray Populations:</h3>
+        <p>
+          The "Adopt, Don't Shop" philosophy actively contributes to reducing
+          the number of stray and abandoned cats. By providing a home to a
+          rescued cat, you become part of the solution to the ongoing issue of
+          overpopulation.
+        </p>
+      </article>
+      <article>
+        <h3>Healthier, Happy Companions:</h3>
+        <p>
+          Cats available for adoption are typically spayed or neutered,
+          vaccinated, and often come with a clean bill of health. Shelters and
+          rescue organizations prioritize the well-being of their animals,
+          ensuring that adopted cats are ready to become beloved members of
+          their new families.
+        </p>
+      </article>
+      <article>
+        <h3>Visit Local Shelters:</h3>
+        <p>
+          Start your adoption journey by visiting local animal shelters and
+          rescue organizations. Spend time interacting with the cats, and
+          inquire about their backgrounds and temperaments.
+        </p>
+        <div>
+          <a
+            href="https://www.ministryofcat.com/blog/2020/2/11/why-you-should-adopt-your-next-pet-instead-of-buying"
+            class="btn"
+            >Read More</a
+          >
+        </div>
+      </article>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Copyright &copy; 2024 - PetCare</p>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#">Terms and conditions</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+
+      // Smooth Scrolling
+      $("#navbar a, .btn").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

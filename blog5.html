@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <title>PetCare</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="navbar" id="navbar">
+          <div class="navbar-container">
+            <div class="navbar-brand">
+              <a href="index.html">
+                <img src="./img/logo.png" alt="Logo" />
+              </a>
+            </div>
+            <ul class="navbar-nav-left">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#blog">Blogs</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <ul class="navbar-nav-right">
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-location-dot"></i
+                  ><span>Find a store</span></a
+                >
+              </li>
+            </ul>
+            <!-- Hamburger Menu -->
+            <button type="button" class="hamburger" id="menu-btn">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden" id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#blog">Blogs</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div
+        class="banner"
+        style="background-image: url('./img/blog5-banner.jpeg')"
+      >
+        <div class="overlay"></div>
+        <div class="text-container">
+          <h1 class="text-uppercase">How To Care For Your Senior Dog</h1>
+        </div>
+      </div>
+      <article>
+        <h2 class="sub-heading text-uppercase">
+          Golden Years: A Comprehensive Guide on How to Care for Your Senior Dog
+        </h2>
+        <div class="dog-image">
+          <img src="./img/senior-dog-post.jpg" alt="blog 5 post" />
+        </div>
+        <p class="lead">
+          As our beloved furry friends age, their needs evolve, and it becomes
+          crucial to adapt our care routines to ensure their comfort and
+          well-being during their golden years. In this guide, we'll explore the
+          essential aspects of how to care for a senior dog, providing them with
+          the love and attention they deserve.
+        </p>
+      </article>
+      <article>
+        <h3>Regular Veterinary Check-ups:</h3>
+        <p>
+          Frequent vet visits are even more critical as your dog ages. Regular
+          check-ups help detect and address potential health issues early,
+          ensuring your senior dog receives prompt medical attention.
+        </p>
+      </article>
+      <article>
+        <h3>Balanced Nutrition for Senior Dogs:</h3>
+        <p>
+          Senior dogs often have different nutritional requirements than younger
+          counterparts. Choose a high-quality senior dog food that addresses
+          their changing needs, including joint support, easy digestibility, and
+          controlled calorie content to manage weight.
+        </p>
+      </article>
+      <article>
+        <h3>Maintain a Healthy Weight:</h3>
+        <p>
+          Weight management is crucial for senior dogs, as excess weight can
+          exacerbate age-related issues like arthritis. Monitor their weight and
+          adjust their diet and exercise routine accordingly.
+        </p>
+      </article>
+      <article>
+        <h3>Joint Health Support:</h3>
+        <p>
+          Arthritis and joint problems are common in senior dogs. Provide joint
+          supplements or food formulated with glucosamine and chondroitin to
+          promote joint health and ease any discomfort.
+        </p>
+      </article>
+      <article>
+        <h3>Regular, Gentle Exercise:</h3>
+        <p>
+          While their energy levels may decrease, regular exercise remains
+          essential for senior dogs. Tailor activities to their abilities,
+          incorporating short, gentle walks, swimming, and interactive playtime
+          to keep them active and maintain muscle tone.
+        </p>
+      </article>
+      <article>
+        <h3>Comfortable Sleeping Area:</h3>
+        <p>
+          Provide a cozy and comfortable bed for your senior dog. Orthopedic
+          beds can offer extra support for achy joints, ensuring a good night's
+          sleep.
+        </p>
+        <div>
+          <a
+            href="https://ohmydogblog.com/2021/04/loving-a-senior-dog/"
+            class="btn"
+            >Read More</a
+          >
+        </div>
+      </article>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Copyright &copy; 2024 - PetCare</p>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#">Terms and conditions</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+
+      // Smooth Scrolling
+      $("#navbar a, .btn").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
