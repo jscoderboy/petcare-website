@@ -1,0 +1,47 @@
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding-top:40px;
+    margin-top:20px;
+
+}
+.about .details{
+    padding:40px;
+    margin-right:40px;
+}
+.about .details h1{
+    padding-bottom:20px;
+}
+.about .image{
+    height: 440px;
+    background-color: rebeccapurple;
+}
+.about .image img{
+    border:30px solid white;
+    margin-left:-10%;
+    margin-top:12%;
+    box-shadow: 3px 3px 20px black;
+}
+.mission{
+    padding:40px;
+}
+.mission .sub-heading{
+    text-align: start;
+    padding:40px 0;
+}
+.goal{
+    width:100%;
+    margin:40px 0;
+}
+.goal .our-promise{
+    display: flex;
+    justify-content: space-between;
+}
+.our-promise .details{
+    padding:0 0 0 40px;
+}
+.our-promise .details .sub-heading{
+    text-align: start;
+    padding-bottom:40px;
+}

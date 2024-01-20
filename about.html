@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- about css -->
+    <link rel="stylesheet" href="about.css" />
+    <title>PetCare | About</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="navbar" id="navbar">
+          <div class="navbar-container">
+            <div class="navbar-brand">
+              <a href="#">
+                <img src="./img/logo.png" alt="Logo" />
+              </a>
+            </div>
+            <ul class="navbar-nav-left">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#blog">Blogs</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <ul class="navbar-nav-right">
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-location-dot"></i
+                  ><span>Find a store</span></a
+                >
+              </li>
+            </ul>
+            <!-- Hamburger Menu -->
+            <button type="button" class="hamburger" id="menu-btn">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden" id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="about">
+          <div class="details">
+            <h1 class="primary-heading">About Us</h1>
+            <p>
+              Nestled at the heart of [Your City], [Your Pet Care Website] was
+              born out of a shared love for animals and a commitment to
+              providing unparalleled care for your cherished pets. We understand
+              that the relationship between pets and their owners goes beyond
+              companionship – it's a bond built on trust, joy, and unwavering
+              loyalty.
+            </p>
+          </div>
+          <div class="image">
+            <img src="./img/cat.jpg" alt="" />
+          </div>
+        </div>
+        <div class="mission">
+          <div class="details">
+            <h2 class="sub-heading">Our Mission</h2>
+            <h3>Empowering Pet Owners:</h3>
+            <p>
+              We are on a mission to empower pet owners with the knowledge and
+              resources needed to provide the best possible care for their pets.
+              Our team of dedicated experts is committed to curating valuable
+              content, sharing insightful tips, and answering your burning
+              pet-related questions.
+            </p>
+
+            <h3>Quality Over Quantity:</h3>
+            <p>
+              In a market flooded with options, we stand by our commitment to
+              quality. Our carefully curated selection of products is a
+              testament to our dedication to your pet's well-being. From premium
+              pet food made with wholesome ingredients to durable and
+              stimulating toys, every item in our collection is chosen with your
+              pet's health and happiness in mind.
+            </p>
+
+            <h3>Fostering Community:</h3>
+            <p>
+              Pets bring people together, and our community is a testament to
+              that. Join our forums, engage with us on social media, and connect
+              with fellow pet enthusiasts. Share your experiences, seek advice,
+              and form friendships that celebrate the unique joys and challenges
+              of pet ownership.
+            </p>
+          </div>
+        </div>
+        <div class="goal">
+          <div class="our-promise">
+            <div class="image">
+                <img src="./img/goal.png" alt="goal" />
+              </div>
+            <div class="details">
+              <h2 class="sub-heading">Our Commitment to You</h2>
+              <p>
+                When you choose [Your Pet Care Website], you're not merely
+                accessing a website – you're becoming part of a caring,
+                knowledgeable, and passionate community dedicated to the welfare
+                of animals. We promise to uphold the highest standards in
+                delivering reliable information, premium products, and a
+                supportive network that enhances your journey as a pet parent.
+                Thank you for entrusting us with the care of your furry friends.
+                Welcome to the [Your Pet Care Website] family, where every pet
+                is family!
+              </p>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </main>
+<!-- Footer -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-content">
+      <p>Copyright &copy; 2024 - PetCare</p>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+
+      // Smooth Scrolling
+      $("#navbar a, .btn").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

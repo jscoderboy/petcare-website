@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,12 +7,13 @@
 }
 html,
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.4;
   color: #000;
 }
 a {
   color: #000;
+  font-weight: 600;
 }
 ul {
   list-style: none;
@@ -20,6 +21,8 @@ ul {
 p {
   margin: 5px 0;
   line-height: 1.7;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 img {
   max-width: 100%;
@@ -478,6 +481,29 @@ img {
   .section-c .right-food-wrapper img {
     max-width: 100%;
   }
+  /* about page */
+  .about{
+    flex-direction: column;
+  }
+  .about .image{
+    display: none;
+  }
+  .about .details{
+    padding:20px;
+    margin:0;
+  }
+  .mission .sub-heading{
+    padding:20px 0;
+  }
+  .our-promise{
+    flex-direction: column;
+  }
+  .our-promise .image{
+    padding-bottom:20px;
+  }
+  .our-promise .details .sub-heading{
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -491,6 +517,9 @@ img {
   .footer-content {
     flex-direction: column;
   }
+  .section-b{
+    padding-bottom:20px;
+  }
   .section-b .dog-food,
   .section-b .cat-food {
     flex-direction: column;
@@ -500,5 +529,26 @@ img {
   .section-b .food-quality .icon-wrapper {
     width: 100%;
     padding: 0 0 20px 25px;
+  }
+  .section-c{
+    padding-top:0;
+  }
+  .section-c .food-content{
+    padding-top:0px;
+  }
+  .contact .address{
+    padding:20px 40px;
+  }
+  .contact .d-flex{
+    flex-direction: column;
+  }
+  .contact .d-flex h3{
+    font-size:1.5rem;
+  }
+  .contact .d-flex p{
+    font-size:1rem;
+  }
+  .contact .callback-form{
+    width:100%;
   }
 }
