@@ -471,6 +471,7 @@ img {
 }
 .terms-c .sub-heading {
   padding: 20px 0 40px 0;
+  text-decoration: underline;
 }
 .terms-c .d-flex {
   display: flex;
