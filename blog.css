@@ -1,69 +1,74 @@
 .banner {
-    position: relative;
-    width: 100%;
-    height: 50vh; /* Adjust the height as needed */
-    background-image: url('./img/blog1.png'); /* Replace with your actual image URL */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Adjust the height as needed */
+  background-image: url("./img/blog1.png"); /* Replace with your actual image URL */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
 }
 
 .text-container {
-    text-align: center;
-    z-index: 9;
+  text-align: center;
+  z-index: 9;
 }
 
 h1 {
-    font-size:3.5rem;
-    color:#fff;
-    font-family: "Farro", sans-serif;
-    font-weight: 700;
+  font-size: 3.5rem;
+  color: #fff;
+  font-family: "Farro", sans-serif;
+  font-weight: 700;
 }
 
 article h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    padding:40px 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 20px 0;
 }
-article .dog-image{
-    padding:40px 0;
-    text-align: center;
+article .dog-image {
+  padding: 30px 0;
+  text-align: center;
 }
-h3{
-    padding:40px 0;
+h3 {
+  padding: 10px 0;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    text-decoration: none;
-    background-color: #639; /* Adjust the button color */
-    color: #fff;
-    border-radius: 5px;    
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #639; /* Adjust the button color */
+  color: #fff;
+  border-radius: 5px;
 }
 .btn {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #333;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 16px;
-    color: #fff;
-  }
-  article{
-    padding-bottom:40px;
-  }
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #fff;
+}
+article {
+  padding-bottom: 10px;
+}
+article .dog-image {
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
