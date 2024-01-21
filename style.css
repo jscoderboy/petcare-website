@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -48,7 +48,7 @@ img {
   text-align: center;
   font-family: "Farro", sans-serif;
 }
-.text-uppercase{
+.text-uppercase {
   text-transform: uppercase;
 }
 /* Navbar */
@@ -59,7 +59,6 @@ img {
   background-color: #fff;
   box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
     0 0 2px rgb(0 0 0 / 7%);
-    
 }
 .navbar-container {
   display: flex;
@@ -224,50 +223,51 @@ img {
   margin: 40px 0;
 }
 /* Section B */
-.section-b{
-  padding:40px 0;
-  margin:40px 0;
+.section-b {
+  padding: 40px 0;
+  margin: 40px 0;
   background-color: #f4f4f4;
 }
-.section-b .sub-heading{
-  padding:48px 0;
+.section-b .sub-heading {
+  padding: 48px 0;
 }
-.section-b p{
-  margin-bottom:0;
-  font-size:1.3rem;
+.section-b p {
+  margin-bottom: 0;
+  font-size: 1.3rem;
   font-weight: 500;
 }
-.section-b .categories{
+.section-b .categories {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:50px;
+  gap: 50px;
   width: 100%;
   height: 100%;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
-.section-b .categories .cate-card{
-  width:100%;
+.section-b .categories .cate-card {
+  width: 100%;
   height: 100%;
 }
-.cate-card .d-flex{
+.cate-card .d-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.section-b .categories .dog{
+.section-b .categories .dog {
   display: flex;
   justify-content: flex-end;
 }
-.section-b .categories .cat{
+.section-b .categories .cat {
   display: flex;
   justify-content: flex-start;
 }
-.section-b .categories .cate-card img{
+.section-b .categories .cate-card img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border:5px solid #7b1fda;
+  border: 5px solid #7b1fda;
+  object-fit: cover;
 }
 
 /* Section C */
@@ -302,14 +302,15 @@ img {
 .section-e {
   padding: 40px 0px;
 }
-.section-e .card{
-    transition: transform .2s; /* Animation */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.section-e .card {
+  transition: transform 0.2s; /* Animation */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.section-e .card:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+.section-e .card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .section-e .card-container {
   display: flex;
@@ -327,8 +328,8 @@ img {
 .card-container .card img {
   width: 100%;
   /* height: auto; */
-  height:250px;
-  object-fit:fill;
+  height: 250px;
+  object-fit: fill;
 }
 .card-container .card-content {
   padding: 16px;
@@ -348,8 +349,8 @@ img {
 }
 
 /* Section-F */
-#contact{
-    padding-bottom:50px;
+#contact {
+  padding-bottom: 50px;
 }
 .contact {
   background-image: url("./img/h1_bg-shape-foot.png");
@@ -362,17 +363,17 @@ img {
   color: #fff;
   padding: 40px 0;
 }
-.contact .d-flex{
+.contact .d-flex {
   display: flex;
 }
-.contact .address{
-  padding:40px;
+.contact .address {
+  padding: 40px;
 }
-.contact h3{
-  font-size:1.7rem;
+.contact h3 {
+  font-size: 1.7rem;
 }
-.contact .d-flex p{
-  font-size:1.2rem; 
+.contact .d-flex p {
+  font-size: 1.2rem;
 }
 /* Callback form */
 .callback-form {
@@ -453,7 +454,7 @@ img {
   .hero-content {
     margin: 30px 0;
   }
-  
+
   .section-c .right-food-wrapper {
     flex-direction: column-reverse;
   }
@@ -461,50 +462,51 @@ img {
     max-width: 100%;
   }
   /* about page */
-  .about{
+  .about {
     flex-direction: column;
   }
-  .about .primary-heading{
+  .about .primary-heading {
     text-align: center;
   }
-  .about .image{
+  .about .image {
     /* display: none; */
-    height:0;
+    height: 0;
     background-color: #fff !important;
   }
   .about .image img {
-  margin:0 !important;
+    margin: 0 !important;
   }
-  .about .image{
-    height:100%;
-    margin:40px 0;
+  .about .image {
+    height: 100%;
+    margin: 40px 0;
     background-color: none;
   }
-  .about .details{
-    padding:0 40px !important;
-    margin-right:0px !important;
+  .about .details {
+    padding: 0 40px !important;
+    margin-right: 0px !important;
   }
-  .mission .sub-heading{
-    padding:20px 0;
+  .mission .sub-heading {
+    padding: 20px 0;
   }
-  .our-promise{
+  .our-promise {
     flex-direction: column;
   }
-  .our-promise .image{
-    padding-bottom:20px;
+  .our-promise .image {
+    padding-bottom: 20px;
   }
-  .our-promise .details .sub-heading{
+  .our-promise .details .sub-heading {
     padding-bottom: 20px;
   }
   /* Contact us */
-  .contact-wrapper .row{
+  .contact-wrapper .row {
     flex-direction: column;
   }
-  .contact-wrapper .row .info, .contact-wrapper .row .support-img{
+  .contact-wrapper .row .info,
+  .contact-wrapper .row .support-img {
     width: 100%;
   }
-  .contact-wrapper .row .info{
-    margin-bottom:40px;
+  .contact-wrapper .row .info {
+    margin-bottom: 40px;
   }
 }
 
@@ -520,41 +522,41 @@ img {
     flex-direction: column;
   }
   .section-b .categories .cate-card img {
-  width: 115px;
-  height: 115px;
+    width: 115px;
+    height: 115px;
   }
-  
-  .section-c{
-    padding-top:0;
+
+  .section-c {
+    padding-top: 0;
   }
-  .section-c .food-content{
-    padding-top:0px;
+  .section-c .food-content {
+    padding-top: 0px;
   }
-  .section-c .food-content .lead{
-    font-size:1.1rem;
+  .section-c .food-content .lead {
+    font-size: 1.1rem;
   }
   .right-food-wrapper .sub-heading {
-    padding-bottom:20px;
+    padding-bottom: 20px;
   }
-  .footer-content .footer-nav ul li a{
-    font-size:1rem;
+  .footer-content .footer-nav ul li a {
+    font-size: 1rem;
     font-weight: 300;
   }
   /* about us */
-  
-  .contact .address{
-    padding:20px 40px;
+
+  .contact .address {
+    padding: 20px 40px;
   }
-  .contact .d-flex{
+  .contact .d-flex {
     flex-direction: column;
   }
-  .contact .d-flex h3{
-    font-size:1.5rem;
+  .contact .d-flex h3 {
+    font-size: 1.5rem;
   }
-  .contact .d-flex p{
-    font-size:1rem;
+  .contact .d-flex p {
+    font-size: 1rem;
   }
-  .contact .callback-form{
-    width:100%;
+  .contact .callback-form {
+    width: 100%;
   }
 }
