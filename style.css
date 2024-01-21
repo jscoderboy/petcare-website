@@ -464,6 +464,9 @@ img {
   color: #fff;
   text-decoration: none;
 }
+.footer-content .footer-nav ul li a:hover {
+  color: #7b1fda;
+}
 
 /* Terms and conditions */
 .terms-c {
