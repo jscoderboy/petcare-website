@@ -59,6 +59,7 @@ img {
   background-color: #fff;
   box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
     0 0 2px rgb(0 0 0 / 7%);
+  z-index: 10;
 }
 .navbar-container {
   display: flex;
@@ -623,6 +624,9 @@ img {
   }
   .terms-c .d-flex img {
     padding-bottom: 30px;
+  }
+  .section-e {
+    padding: 20px 0;
   }
 }
 
