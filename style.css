@@ -244,7 +244,7 @@ img {
   padding: 40px 0;
   margin: 40px 0;
   background-color: #f4f4f4;
-  background-image: url("./img/effect1.png");
+  background-image: url("./img/h1_bg-6.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -478,14 +478,11 @@ img {
   padding: 20px 0 40px 0;
   text-decoration: underline;
 }
-.terms-c .d-flex {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  margin-top: 40px;
+.terms-c article {
+  padding: 10px 0;
 }
 .terms-box {
-  max-width: 460px;
+  max-width: 100%;
   background-color: #111;
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -493,18 +490,9 @@ img {
 }
 .terms-text {
   padding: 0 20px;
-  height: 400px;
-  overflow-y: auto;
   font-size: 14px;
   font-weight: 500;
   color: #f1f1f1;
-}
-.terms-text::-webkit-scrollbar {
-  width: 2px;
-  background-color: #282828;
-}
-.terms-text::-webkit-scrollbar-thumb {
-  background-color: #d13639;
 }
 .terms-text h2 {
   text-transform: uppercase;
