@@ -469,10 +469,14 @@ img {
   margin: 40px 0;
   background-color: #f4f4f4;
 }
+.terms-c .sub-heading {
+  padding: 20px 0 40px 0;
+}
 .terms-c .d-flex {
   display: flex;
   justify-content: center;
   justify-content: space-between;
+  margin-top: 40px;
 }
 .terms-box {
   max-width: 460px;
