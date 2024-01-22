@@ -1,6 +1,7 @@
 .about {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 40px;
   margin-top: 20px;
 }
@@ -10,16 +11,6 @@
 }
 .about .details h1 {
   padding-bottom: 20px;
-}
-.about .image {
-  height: 440px;
-  background-color: rebeccapurple;
-}
-.about .image img {
-  border: 30px solid white;
-  margin-left: -10%;
-  margin-top: 12%;
-  box-shadow: 3px 3px 20px black;
 }
 .mission {
   padding: 40px;

@@ -502,34 +502,6 @@ img {
   text-align: center;
   padding: 0 40px;
 }
-.terms-box h4 span {
-  color: #d13639;
-}
-.terms-c .buttons {
-  display: flex;
-  padding: 40px 20px;
-  justify-content: space-between;
-}
-.terms-c .btn {
-  height: 50px;
-  width: calc(50% - 6px);
-  border: 0;
-  border-radius: 6px;
-  font-size: 19px;
-  font-weight: 500;
-  color: #fff;
-  transition: 0.3s linear;
-  cursor: pointer;
-}
-.gray-btn {
-  background-color: #282828;
-}
-.red-btn {
-  background-color: #d13639;
-}
-.terms-c .btn:hover {
-  opacity: 0.6;
-}
 
 /* Media query */
 @media (max-width: 768px) {
@@ -653,6 +625,10 @@ img {
   .footer-content .footer-nav ul li a {
     font-size: 1rem;
     font-weight: 300;
+  }
+  /* about */
+  .about .image {
+    height: 1px;
   }
   /* about us */
 
